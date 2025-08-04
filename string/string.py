@@ -125,3 +125,34 @@ txt = "We are the so-called \"Vikings\" from the north."
 print(txt)
 
 # String Methods
+name = "sohel rana"
+
+# Converts the first character to upper case
+print(name.capitalize()) # output Sohel rana
+
+# Converts string into lower case
+print(name.casefold()) # output sohel rana
+
+# Returns a centered string
+print(name.center(30)) # output sohel rana 30 px in left
+
+# Returns the number of times a specified value occurs in a string
+print(name.count("a")) # output 2
+
+# Searches the string for a specified value and returns the position of where it was found
+print(name.find("a")) # output  7(indexed num.)
+
+# Returns True if all characters in the string are lower case
+print(name.islower()) # output True
+
+# Joins the elements of an iterable to the end of the string
+myTuple = ("John", "Peter", "Vicky")
+result = "$".join(myTuple)
+print(result) # output John$Peter$Vicky
+
+# title() Method
+# Make the first letter in each word upper case:
+txt = "Welcome to my world"
+print(txt.title()) # output Welcome To My World
+
+
