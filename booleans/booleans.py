@@ -24,3 +24,14 @@ print(bool("")) # output False
 print(bool(())) # output False
 print(bool([])) # output False
 print(bool({})) # output False
+
+def myFunction() :
+  return True
+
+if myFunction():
+  print("YES!")
+else:
+  print("NO!")
+
+x = 15
+print(isinstance(x, int)) # output True
