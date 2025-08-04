@@ -46,3 +46,82 @@ name = "Fahim Rahman"
 
 check = "Rahman" not in name
 print(check) # False
+
+# Get the characters from position 2 to position 5 (5 not included):
+a = "Hello, World!"
+print(a[2:5]) # output llo
+
+# Slice From the Start
+# By leaving out the start index, the range will start at the first character:
+a = "Hello, World!"
+print(a[:5]) # output Hello
+
+# Slice To the End
+# By leaving out the end index, the range will go to the end:
+b = "Hello, World!"
+print(b[2:]) # output llo, World!
+
+# Negative Indexing
+# Use negative indexes to start the slice from the end of the string:
+b = "Hello, World!"
+print(b[-5:-2]) #output orl
+
+# Modify Strings
+# The lower() method returns the string in lower case:
+name = "Sohel Rana"
+print(name.lower()) # output sohel rana
+
+# The upper() method returns the string in upper case:
+print(name.upper()) # output SOHEL RANA
+
+# Remove Whitespace
+# Whitespace is the space before and/or after the actual text, 
+# and very often you want to remove this space.
+# The strip() method removes any whitespace from the beginning or the end:
+name = "   Sohel   Rana    "
+print(name.strip()) # output Sohel   Rana
+
+# Replace String
+# The replace() method replaces a string with another string:
+print(name.replace("S", "H")) # output Hohel   Rana
+
+# Split String
+# The split() method returns a list where the text between the specified 
+# separator becomes the list items.
+name = "Sohel Rana"
+print(name.split(" ")) #output ['Sohel', 'Rana']
+
+# String Concatenation
+a = "Hello"
+b = "World"
+c = a + " " + b
+print(c)
+
+# String Format
+# age = 26
+# name = "My name is Sohel and I'm " + age
+# print(name)
+# This will produce an error:
+
+# But we can combine strings and numbers by using f-strings or the format() method!
+
+# To specify a string as an f-string, simply put an f in front of the string literal, and add curly brackets {} as placeholders 
+# for variables and other operations.
+
+age = 26
+name = f"My name is Sohel and I'm {age} years old"
+print(name)
+
+# Display the price with 2 decimals:
+price = 59
+txt = f"This product is {price:.2f} dolar"
+print(txt)
+
+txt = f"The price is {10 * 59} dollars"
+print(txt)
+
+# Escape Character
+txt = "We are the so-called \"Vikings\" from the north." 
+print(txt)
+
+# String Methods
